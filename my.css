@@ -52,9 +52,9 @@ body{
 	border-radius: 2px;
 }
 .cover > .tag1 h1{
-	font-size: 3.0em;
+	font-size: 1.5em;
 	border-style: outset;
-	width: 450px;
+	width: 156px;
 	padding: 4px;
 }
 
@@ -77,6 +77,7 @@ body{
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	text-align:center;
 }
 
 .tiles > .tiles-wrapper{
@@ -106,14 +107,14 @@ body{
 
 .course-heading{
 	width: 100%
-	height: 300px;
+	height: 200px;
 	display: flex;
 	background-color: #DCDCDC;
 	justify-content: center;
 	text-align:center;
 	margin-top: 5px;
 	padding-top: 50px;
-	/*text-decoration: underline;*/
+	/*text-decoration: underline;
 	/*text-decoration-color:#f5c71a;*/
 }
 
@@ -155,19 +156,27 @@ body{
   transform: scale(1.1); 
 }
 
-.course-title h1{
-	color: #FFFFFF;
+.course-title {
 	background-color: #000000;
 	display:flex;
 	width: 100%;
-	height:80px;
+	height:50px;
 	justify-content: center;
 	text-align: center;
 	margin-top:0px;
-	padding-top: 60px;
+	padding-top: 30px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
+	border-bottom: 1px solid black;
 }
+
+.multicolortext {
+    background-image: linear-gradient(to left, orange, white, green);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    }
 
 .newsletter{
 	width: 100%;
@@ -195,7 +204,7 @@ body{
  
 
 .news-email{
-	width: 350px;
+	width: 300px;
 	height: 40px;
 }
 
@@ -225,4 +234,37 @@ body{
 	background-color: #4CAF50;
 }
 
+.grid-container{
+	display: grid;
+	grid-template-columns:auto auto auto;
+	/*width: 100%;*/
+	/*height: 400px;*/
+	background-color: #FFFFFF;
+	padding: 10px;
+	margin-left: 100px;
+	margin-right: 100px;
+	align-content: center;
+	justify-content: space-between;
+	grid-gap: 20px;
+}
 
+.grid-item{
+	/*font-size: 30px;*/
+	align-items: center;
+	padding: 20px;
+	text-align: center;
+}
+
+.grid-heading{
+	text-align: center;
+	justify-content: center;
+	padding-top: 50px;
+	font-size: 1.5em;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+}
+
+.grid-container > .grid-item > .icon4 i{
+	font-size: 3.5em;
+	color: #FF8C00;
+}
